@@ -8,11 +8,11 @@
   <script src="app.js"></script>
 </head>
 <body ng-controller="MainController">
- <header class="header">
-  <img src="dcsipl_logo_png.png" alt="Logo" class="logo" />
-  <h1>JSCH - Just Smart Custom Admin portal</h1>
-  <button class="login-btn">Login</button>
-</header>
+  <header class="header">
+    <img src="app/Images/dcsipl_logo_png.png" alt="Logo" class="logo" />
+    <h1>JSCH - Just Smart Custom Admin portal</h1>
+    <button class="login-btn">Login</button>
+  </header>
   <main class="main-content">
     <aside class="sidebar">
       <button class="nav-btn green" ng-click="goTo('common')">JSCH - Common Details</button>
@@ -20,7 +20,6 @@
       <button class="nav-btn" ng-click="goTo('available')">JSCH - Available Projects</button>
       <button class="nav-btn" ng-click="goTo('gallery')">JSCH - Gallery</button>
     </aside>
-
     <section class="content">
       <p>This is the admin portal for Just Smart Custom Homes, here we can view/edit/delete the details of JSCH which will impact the customer portals.</p>
       <div ng-include="currentPage" id="dynamic-content"></div>
@@ -28,6 +27,3 @@
   </main>
 </body>
 </html>
-
-
-
